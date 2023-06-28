@@ -123,13 +123,11 @@ public class UserManager {
 			return;
 		}
 		System.out.println(cartItem);
-		
 		System.out.println("============================");
 		System.out.println("1. Thêm 1 sản phẩm");
 		System.out.println("2. Giảm 1 sản phẩm");
 		System.out.println("3. Thêm n sản phẩm");
 		System.out.println("4. Xóa n sản phẩm");
-		System.out.println("5. Thoát");
 		System.out.print("Mời bạn lựa chọn: ");
 		int choose = Inputmethods.getInteger();
 		switch (choose) {
@@ -156,14 +154,10 @@ public class UserManager {
 			case 4:
 				changeProductById("DOWN", cartItem, product);
 				break;
-			case 5:
-				break;
 			default:
 				System.err.println("Vui lòng nhập lại (1 -> 5)");
 				break;
 		}
-		
-		
 	}
 	
 	public void changeProductById(String type, CartItem cartItem, Product product) {
